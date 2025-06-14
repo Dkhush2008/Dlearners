@@ -54,10 +54,10 @@ export function SidebarNav() {
               )}
               aria-current={pathname === item.href ? "page" : undefined}
             >
-              <a>
+              <>
                 <item.icon className="h-5 w-5" />
                 <span className="group-data-[collapsible=icon]:hidden">{item.label}</span>
-              </a>
+              </>
             </SidebarMenuButton>
           </Link>
         </SidebarMenuItem>
